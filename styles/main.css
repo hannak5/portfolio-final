@@ -277,25 +277,15 @@ li.logo {
 
 .herotop{
   width:100%;
-  text-align: left;
+  text-align: center;
   font-weight: 500;
   font-size: 10rem;
   color: #9B6E9A;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   padding:5% 20%;
 }
 
-.herotext{
-  width:100%;
-  text-align: left;
-  font-weight: 500;
-  font-size: 10rem;
-  color: #9B6E9A;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding:5% 20%;
-}
 
 .h5{
   font-weight:300;
