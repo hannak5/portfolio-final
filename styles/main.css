@@ -50,7 +50,7 @@ h2 {
 
 h5{
   font-family: 'Josefin Sans', sans-serif;
-  letter-spacing: .2.5rem;
+  letter-spacing: .25rem;
   font-size: 3.6rem;
 }
 
@@ -281,7 +281,7 @@ li.logo {
   font-size: 10rem;
   color: #9B6E9A;
   justify-content: flex-start;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .h5{
