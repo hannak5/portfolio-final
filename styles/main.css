@@ -583,6 +583,8 @@ li.mail img, li.github img, li.linkedin img{
 .cxm img{
   width:300px;
   height:auto;
+  padding-top:2rem;
+  padding-bottom:1rem;
 }
 
 /* STO project page details */
