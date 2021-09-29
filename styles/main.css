@@ -31,10 +31,11 @@ a:hover{
 }
 
 p{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   line-height: 2;
   font-weight: 300;/* 400 for project.html*/
+  letter-spacing: 0.5px;
 }
 
 h1 {
@@ -55,14 +56,14 @@ h5{
 }
 
 h6{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   letter-spacing: .1rem;
   line-height: 2.4rem;
   font-size: 1.6rem;
 }
 
 b{
-  font-weight: bolder;
+  font-weight:600;
 }
 
 .title{
@@ -85,7 +86,7 @@ b{
 
 /*body copy big*/
 .bodycopy{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   line-height: 3rem;
   letter-spacing: .1rem;
@@ -101,20 +102,25 @@ b{
 }
 
 .captions{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   letter-spacing: .1rem;/* 0.1rem in project page*/
   line-height: 200%;/*150% in project page*/
-  text-align:left;
+  text-align:center;
 }
 
 .fig{
   font-family: 'Josefin sans', sans-serif;
-  padding-left:2rem;
-  font-style: italic;
+  font-weight: 500;
   letter-spacing: 0px;
+  font-style: italic;
+  color:#546E7A;
+  padding-top:1.5rem;
 }
 
+.que{
+  text-align: center;
+}
 
 
 /*all the flex containers common element. 800px for desktop version*/
@@ -147,11 +153,12 @@ b{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: auto;
+
   justify-content: center;
   text-align:left;
-  width:100vw;
+
 }
+
 
 section {
   margin: auto;
@@ -167,7 +174,8 @@ section {
 
 .textblock{
   margin:5px;
-  padding:2rem 0;
+  padding-bottom:4rem;
+  padding-top:2rem;
 }
 
 
@@ -175,8 +183,8 @@ section {
 /*button specifications*/
 
 .aroundbutton{
-  padding-top: 0rem;
-  padding-bottom:8rem;
+  padding-top: 2rem;
+  padding-bottom:6rem;
 }
 
 .casestudy{
@@ -194,7 +202,7 @@ a.button:link , a.button:visited {
   font-weight: 200;
   border-radius: 24px;
   font-family: 'PT Sans', sans-serif;
-  width: 240px;
+  width: auto;
   letter-spacing: .2rem;
   text-decoration: none;
 }
@@ -209,8 +217,22 @@ a.button:hover {
   font-size: 16px;
   border-radius: 24px;
   font-family: 'PT Sans', sans-serif;
-  width: 240px;
+  width: auto;
   letter-spacing: .2rem;
+}
+
+.approw{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+
+.appicon img{
+  height: 60px;
+  width: auto;
+  padding-left:1rem;
+  padding-right:1rem;
 }
 
 /*navbar specs*/
@@ -318,7 +340,7 @@ li.logo {
   justify-content: center;
   align-items: center;
   line-height: 5rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-size: 2.5rem;
   font-weight: 300;
   letter-spacing: .2rem;
@@ -357,8 +379,10 @@ li.logo {
   height: 400px;
 }
 
-.proj-logo{
+.proj-Logo img{
   padding-top:20px;
+  height:100px;
+  width:auto;
 }
 
 
@@ -408,7 +432,7 @@ li.logo {
   display: flex;
   flex-wrap: wrap;
   flex-direction:row;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Poppins', sans-serif;
   height: auto;
   width: 100%;
   justify-content: space-around;
@@ -457,8 +481,8 @@ li.mail img, li.github img, li.linkedin img{
 /*about me page*/
 .designer img{
   position:relative;
-  width:100%;
-  height:55rem;
+  width:100vw;
+  height:80rem;
   object-fit:cover;
 }
 
@@ -547,6 +571,18 @@ li.mail img, li.github img, li.linkedin img{
 .getintouch{
   padding:10rem 8rem;
   padding-top:0;
+}
+
+.mobileapp img{
+  width:80vw;
+  height:auto;
+  margin-left:auto;
+  margin-right: auto;
+}
+
+.cxm img{
+  width:300px;
+  height:auto;
 }
 
 /* STO project page details */
@@ -689,8 +725,14 @@ li.mail img, li.github img, li.linkedin img{
   width: auto;
 }
 
+.i1 img, .i2 img, .i3 img, .i4 img{
+  height: 16rem;
+  padding: 5px;
+  width: auto;
+}
+
 .ui, .account, .thumbsup, .ninefive,
-.back, .comp, .hand, .plus{
+.back, .comp, .hand, .plus, .i1, .i2, .i3, .i4{
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
@@ -908,16 +950,16 @@ a:hover{
 /*user flows section*/
 
 .userflows{
-
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: flex-end;
   align-content: center;
   justify-content:center;
-  padding: 8rem 0;
+  padding: 0 0;
   height: auto;
   width:100%;
+  padding-bottom: 1rem;
 }
 
 .flow1 img, .flow2 img{
@@ -929,7 +971,17 @@ a:hover{
   width:auto;
   margin:2rem;
   margin-bottom:.5rem;
-  filter: drop-shadow(0px 3px 9px #B3C1C7);
+  /*filter: drop-shadow(0px 3px 9px #B3C1C7);*/
+}
+
+div.flow3, div.flow4 {
+  padding: 2rem;
+  padding-bottom: 4rem;
+}
+
+div.pf1, div.pf2 {
+  padding: 2rem;
+  padding-bottom: 4rem;
 }
 
 .flow3 img, .flow4 img{
@@ -937,11 +989,60 @@ a:hover{
   justify-content: center;
   align-items: flex-end;
   align-content: center;
-  max-height:60rem;
-  width:auto;
-  margin:2rem;
-  margin-bottom:.5rem;
-  filter: drop-shadow(0px 3px 9px #B3C1C7);
+  max-height:auto;
+  width:80%;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top:1rem;
+  padding-bottom:2rem;
+  /*filter: drop-shadow(0px 3px 9px #B3C1C7);*/
+}
+
+.pf1 img, .pf2 img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+  max-height:auto;
+  margin-left:auto;
+  margin-right: auto;
+  width:50%;
+  padding:1rem;
+}
+
+div.fb1, div.fb2{
+  padding: 2rem;
+  padding-bottom: 4rem;
+}
+
+.fb1 img, .fb2 img {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+  height:auto;
+  margin-left:auto;
+  margin-right: auto;
+  width:90%;
+  padding:1rem;
+}
+
+div.conc1, div.conc2{
+  padding: 2rem;
+  padding-bottom: 4rem;
+}
+
+.conc1 img, .conc2 img{
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+  max-height:auto;
+  margin-left:auto;
+  margin-right: auto;
+  width:65%;
+  max-height:60vh;
+  padding:1rem;
 }
 
 .sitemap img{
@@ -1151,7 +1252,7 @@ a:hover{
   flex-direction: column;
   justify-content: center;
   padding:0;
-  width:50%;
+  width:100%;
 }
 
 .bl1 img, .bl2 img, .bl3 img{
@@ -1579,7 +1680,7 @@ a:hover{
 
   /*body copy big*/
   .bodycopy{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
     line-height: 3rem;
   }
@@ -1712,6 +1813,8 @@ a:hover{
     align-items:center;
     padding:2rem 0;
   }
+
+
 
   /*problem solution section*/
 
@@ -1850,11 +1953,7 @@ a:hover{
     padding: 5rem 0rem;
   }
 
-.flow3 img, .flow4 img {
-    width: 90vw;
-    padding:0rem;
-    justify-content: center;
-  }
+
 
 
 
