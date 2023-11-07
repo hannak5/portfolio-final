@@ -28,6 +28,7 @@ a:link, a:visited{
 
 a:hover{
   color: #FED180;
+  vertical-align: center;
 }
 
 p{
@@ -252,12 +253,15 @@ a.button:hover {
 }
 
 .appicon img{
-  height: 60px;
-  width: auto;
-  padding-left:1rem;
-  padding-right:1rem;
+  height: 160px;
+  width: 160px;
+  border-radius: 22.5%;
+  margin: 2rem;
 }
 
+.dodgeandcox img{
+  border: .1px solid rgba(60,64,67,.3);
+}
 /*navbar specs*/
 
 .flex-container{
@@ -800,18 +804,25 @@ li.mail img, li.github img, li.linkedin img{
   height: 2rem;
   justify-content: space-around;
   width: 2rem;
+  margin:2rem;
+    align-items: center;
+      vertical-align: middle;
 }
 
 .rightarrow img, li.prev{
   align-items:flex-start;
   justify-content:flex-start;
   text-align:left;
+  vertical-align: middle;
+    align-items: center;
 }
 
 .leftarrow img, li.next{
   align-items:flex-end;
   justify-content: flex-end;
   text-align:right;
+    vertical-align: middle;
+      align-items: center;
 }
 
 li.prev, li.next, li.rightarrow, li.leftarrow{
@@ -821,6 +832,8 @@ li.prev, li.next, li.rightarrow, li.leftarrow{
   font-size: 1.6rem;
   letter-spacing: .1rem;
   padding: 1rem 2rem;
+  vertical-align: middle;
+  align-items: center;
 }
 
 li.prev {
@@ -1510,6 +1523,15 @@ div.conc1, div.conc2{
 
 @media screen and (max-width: 992px) {
 
+.bottomflexcontainer{
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+}
+  .appicon img{
+    height: 100px;
+    width: 100px;
+  }
 
 .main-bl img{
   padding:0;
@@ -1652,6 +1674,8 @@ div.conc1, div.conc2{
     height:auto;
     justify-content: center;
   }
+
+
 
 /*about me page*/
 
@@ -1904,7 +1928,7 @@ div.conc1, div.conc2{
   }
 
   li.prev, li.next, li.rightarrow, li.leftarrow{
-    padding: 1rem 2rem;
+    padding: 1rem 1rem;
   }
 
   .colorbk{
@@ -2228,6 +2252,8 @@ div.conc1, div.conc2{
 }
 
 @media screen and (max-width: 320px){
+
+
 .herotop{
 
 }
@@ -2325,7 +2351,9 @@ img {vertical-align: middle;}
 
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
+
   .prev, .next,.text {font-size: 11px}
+
 }
 
 .laptop1 img{
