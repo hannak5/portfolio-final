@@ -283,8 +283,8 @@ a.button:hover {
 
 .logo img{
       justify-content: left;
-      height: 60px;
-      width: 60px;
+      height: 100px;
+      width: 100px;
     }
 
 li.about, li.logo, li.work, li.resume{
