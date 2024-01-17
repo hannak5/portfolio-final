@@ -1574,6 +1574,7 @@ div.conc1, div.conc2{
 
     li.logo {
       width: 100%;
+      padding-top:1%;
       padding-bottom: 2rem;
       justify-content: center;
     }
@@ -2270,12 +2271,13 @@ li.proj-Content{
 
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 768px){
 
 
-.herotop{
-
-}
+  li.logo
+  {
+    padding-top:5%;
+  }
 
 }
 
@@ -2372,6 +2374,8 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
 
   .prev, .next,.text {font-size: 11px}
+
+
 
 }
 
