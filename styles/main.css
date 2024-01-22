@@ -346,6 +346,12 @@ li.logo {
     padding-left: 0;
   }
 
+.addbuyerhero img{
+  object-fit: fit;
+  height:750px;
+  width:auto;
+  padding:0;
+}
 .herotop, .herobottom{
       display:flex;
       flex-direction: column;
