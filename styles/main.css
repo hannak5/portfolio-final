@@ -39,14 +39,6 @@ p{
   letter-spacing: 0.5px;
 }
 
-pre{
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.6rem;
-  line-height: 2;
-  font-weight: 300;/* 400 for project.html*/
-  letter-spacing: 0.5px;
-}
-
 ul{
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
@@ -108,14 +100,7 @@ b{
   font-family: 'Poppins', sans-serif;
   font-size: 1.6rem;
   line-height: 3rem;
-  letter-spacing: 0.1rem;
-}
-
-.big{
-
-  font-weight: 500;
-
-
+  letter-spacing: .1rem;
 }
 
 .smalltitle{
@@ -418,7 +403,7 @@ li.indexpage{
 }
 
 .main-bl img{
-  margin:0;
+  margin:0:
   padding: 0;
   width: 100%;
   height: auto;
@@ -665,7 +650,7 @@ li.mail img, li.github img, li.linkedin img{
   align-items: center;
 }
 
-.Main, .proj-Logo, .proj-Title {
+.Main, .proj-Logo, .proj-Title, {
   align-items: center;
   display: flex;
   flex-direction: row;
@@ -693,7 +678,13 @@ text-align: left;
   line-height: 2rem;
 }
 
-
+.delv-container{
+  align-items: flex-start;
+  justify-content:space-around;
+  text-align:center;
+  padding: 5rem 0;
+  max-width:800px;
+}
 
 .design, .delv, .tools{
   min-width: 19rem;
@@ -810,6 +801,9 @@ text-align: left;
   height: auto;
   padding: 10rem 10rem;
   width: 100%;
+  align-items: center;
+  align-content: center;
+  justify-content: space-around;
 }
 
 .bottomflexcontainer{
@@ -817,7 +811,7 @@ text-align: left;
   width: 100%;
   align-items: center;
   align-content: center;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -1193,7 +1187,7 @@ div.conc1, div.conc2{
   width: 25%;
 }
 
-.my-dot {
+.dot {
   border-radius: 50%;
   display: inline-block;
   height: 50px;
@@ -1236,6 +1230,9 @@ div.conc1, div.conc2{
   background-color:#C4CB6B;
 }
 
+.herotop{
+  align-items:
+}
 .b4{
   background-color:#FED86D;
 }
@@ -2275,6 +2272,7 @@ li.proj-Content{
   padding-bottom:10rem;
 }
 
+}
 
 @media screen and (max-width: 768px){
 
@@ -2375,47 +2373,6 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 
-.flowprocess img{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: center;
-  max-height:95vh;
-  width:100%;
-  margin-top:2rem;
-  margin-left:auto;
-  margin-right:auto;
-  padding: 1rem 4rem;
-  /*filter: drop-shadow(0px 3px 9px #B3C1C7);*/
-}
-
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 768px) {
-
-  .prev, .next,.text {font-size: 11px}
-
-  .flowprocess{
-   width:100%;
-
- }
-
-.my-row{
-  display: flex;
-  flex-direction:column;
-  flex-wrap: wrap;
-  justify-content: baseline;
-  align-items: flex-start;
-  padding:5%;
-
-}
-
-.column-summary{
-
-  padding:3rem;
-  padding-top:0rem;
-}
-
-}
 
 .laptop1 img{
   display: flex;
@@ -2431,65 +2388,30 @@ img {vertical-align: middle;}
   /*filter: drop-shadow(0px 3px 9px #B3C1C7);*/
 }
 
-
-/* summary panel bit */
-
-
-
-.my-summary {
+.flowprocess img{
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  margin-bottom: 4rem;
-  max-width: 800px;
-  height: auto;
-  align-content: space-around;
-  align-items: stretch;
-  padding-left:0%;
-  flex-wrap:nowrap;
-
-}
-
-
-.my-row {
-
-  display:flex;
-  justify-content: space-between;
-  align-items: flex-start;
-  text-align: left;
-  flex-wrap:nowrap;
-  padding-left:0;
-  max-width: 800px;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+  max-height:95vh;
+  width:100%;
+  margin-top:2rem;
+  margin-left:auto;
+  margin-right:auto;
+  padding: 1rem 4rem;
+  /*filter: drop-shadow(0px 3px 9px #B3C1C7);*/
 }
 
 
 
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 400px) {
 
-.row-summary{
-  display:flex;
-  align-items: flex-start;
-  text-align: left;
-  justify-content:space-around;
-  padding:3% 0%;
-  flex-wrap:nowrap;
+  .prev, .next,.text {font-size: 11px}
 
-}
-/* Create two equal columns that floats next to each other */
-.column-summary {
+  .flowprocess{
+    width:100%;
 
-  float: left;
+  }
 
-}
-
-.column-summary .subtitle{
-  text-align: left;
-  padding-bottom:2%;
-}
-
-
-/* Clear floats after the columns */
-.row-summary:after {
-  content: "";
-  display: table;
-  clear: both;
 }
