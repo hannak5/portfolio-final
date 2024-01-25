@@ -21,6 +21,7 @@
      <link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
      <link href="https://fonts.googleapis.com/css?family=Bad+Script|Dosis:200,300,400,500,600,700,800|Josefin+Sans:100,100i,300,300i,400,400i,600,600i,700,700i|PT+Sans:400,400i,700,700i|Poiret+One&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Bad+Script|Dosis:200,300,400,500,600,700,800|eau:100,100i,300,300i,400,400i,600,600i,700,700i|PT+Sans:400,400i,700,700i|Poiret+One&display=swap" rel="stylesheet">
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
      <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
@@ -46,11 +47,11 @@
 
   <main>
 
-    <<section class="contentfull">
-      <div class="addbuyerhero" id="myframe"><img src="images/addbuyer/herotest.png"></div>
+    <section class="contentfull">
+      <div class="addbuyerhero"><img src="images/addbuyer/final/final/3process.png"></div>
     </section>
 
-    <section class="intro pcontent" id="start">
+      <section class="intro pcontent" id="start">
       <ul class="summary">
         <li class="proj-Logo c2fo"><img src="images/addbuyer/Logo.png" alt="addbuyer logo"></li>
         <li class="proj-Title"><h1>Add Buyer Experience</h1></li>
@@ -114,7 +115,7 @@ Product Roadmap Proposal
 Low/High Fidelity Mockups
 Usability Study
 Salesforce Integration
-Dataflow Diagrams</pre>
+Data flow Diagrams</pre>
 </div>
 </div>
 
@@ -126,10 +127,18 @@ Dataflow Diagrams</pre>
           <div class="prob">
             <p class="subtitle">PROBLEM</p></div>
              <div class="textblock">
-            <p class="bodycopy big">The process for a supplier to request linking to their buyer was  broken.
-Without establishing this connection, the supplier cannot even begin to use the platform to request early payment on their invoices. This was a significant step in the onboarding process that 80% of the suppliers to complete.<br><br> </p>
 
-<p class="bodycopy">Additionally, the poor front-end experience was creating a chaos for the back-end support team workflows. The inefficiencies were causing severe alert fatigue leading to only 30% of the total tickets even being picked up, let alone be successfully closed.
+            <p class="bodycopy big">The process for a supplier to request linking to their buyer was  broken.
+Without establishing this connection, the supplier cannot even begin to use the platform to request early payment on their invoices. This was a significant step in the onboarding process that 80% of the suppliers had to complete.<br><br> </p>
+<section class="contentfull">
+  <div class="userflows">
+
+    <div class="flow3"><img src="images\addbuyer\context.png" alt="User flow for the onboarding process by New User">
+    </div>
+    </div>
+
+</section>
+<p class="bodycopy">Additionally, the poor front-end experience was creating chaos for the back-end support team workflows. The inefficiencies were causing severe alert fatigue leading to only 30% of the total tickets even being picked up, let alone being successfully closed.
 
 </p></div>
 
@@ -137,9 +146,9 @@ Without establishing this connection, the supplier cannot even begin to use the 
 <div>
     <p class="subtitle">CHALLENGE</p></div>
 <div class="textblock">
-    <p class="bodycopy big">No team  owned   this critical usability gap in the onboarding workflow.   <br><br></p>
+    <p class="bodycopy big">No team owned this critical usability gap in the onboarding workflow.   <br><br></p>
 
-<p class="bodycopy">Hence, this experience was not slated for uplift anytime in the near future. This was costing company millions in loss of revenue. Also, since it existed in the legacy version of the app there was no user analytics being tracked and the team members that worked on the original code had long since left the company.
+<p class="bodycopy">Hence, this experience was not slated for uplift anytime in the near future. This was costing the company millions in loss of revenue. Also, since it existed in the legacy version of the app there was no user analytics being tracked and the team members that worked on the original code had long since left the company.
 <BR><BR>
 The future looked bleak.
 </div>
@@ -157,12 +166,25 @@ The future looked bleak.
 
     </section>
 
-      <section class="title">
-            DISCOVERY LIMITATIONS
-      </section>
+<section class="pcontent">
+    <div>
+        <p class="title">CONTEXT</p></div>
+    <div class="textblock">
+        <p class="bodycopy big"><a href="https://c2fo.com/supplier-solutions/early-pay/" target="_blank">C2FO Early Pay</a> is a progressive web application (PWA) where registered suppliers can request early payment at a discount from their in-network buyers.
+
+<br><br></p>
+
+<p class="bodycopy">Early Pay works with over 2 million businesses, including 69 Fortune 100 companies. Each month, it handles early payment requests for over 2.8 million invoices on average, and has managed more than $300 billion in Accounts Payable till date.
+  </div>
+
+</section>
+
+
 
       <section class="colorbk">
+
           <div class="current pcontent textblock">
+              <div class="title color">DISCOVERY LIMITATIONS</div>
               <p class="subtitle que"><b>"Where do we start? Where are the Subject Matter Experts?"</b></p>
               <br>
               <p class="bodycopy"> <br><b>Legacy APIs:</b> This feature has persisted from the outdated system the company transitioned away from four years ago. Consequently, the engineering team faced challenges in providing necessary information due to an incomplete understanding of the legacy codebase. This difficulty was exacerbated by the departure of key team members who had originally worked on it.<br> <br>
@@ -207,7 +229,7 @@ The future looked bleak.
             <div class="textblock">
               <p class="bodycopy">
 
-    This high percentage of users not engaging with the page highlighted missed opportunities. To further understand the impact, we can map these missed opportunities to the various potential paths the users could have taken to generate company revenue. This analysis reveals areas of concern in the user journey and identify opportunities for improvement in both design and user experience.</p>
+    This high percentage of users not engaging with the page highlighted missed opportunities. To further understand the impact, we can map these missed opportunities to the various potential paths the users could have taken to generate company revenue. This analysis reveals areas of concern in the user journey and identifies opportunities for improvement in both design and user experience.</p>
             </div>
           </section>
 
@@ -231,7 +253,7 @@ The future looked bleak.
 
 The data collected on this page stands to immensely benefit various stakeholders, notably the sales team responsible for onboarding buyers to the C2FO platform. Collaborating closely with a leader, we developed a formula (outlined below) to translate the number of customer requests into actual subscription fees, conservatively estimated at approximately $1 million.<br><br>
 
-An equally, if not more, significant outcome of this experience upgrade is the heightened frequency of successful linkages between suppliers and buyers. For each successful linkage, we conservatively projected an increase in Accounts Payable (A/P) flowing through the app. This, in turn, resulted in a conservative estimated company revenue of $2.27 million per year.
+An equally, if not more, significant outcome of this experience upgrade is the heightened frequency of successful linkages between suppliers and buyers. For each successful linkage, we conservatively projected an increase in Accounts Payable (A/P) flowing through the app. This, in turn, resulted in a conservative estimate of $2.27 million Year-Over-Year in additional company revenue.
           </p>
         </div>
 
@@ -271,7 +293,7 @@ After several rounds of collaboration with the development team, subject matter 
       <section class="contentfull">
         <div class="userflows">
 
-          <div class="laptop1"><img src="images/addbuyer/laptop2.png" alt="laptop1">
+          <div class="oldscreen"><img src="images/addbuyer/oldscreen.png" alt="laptop1">
           </div>
 
         </div>
@@ -281,7 +303,7 @@ After several rounds of collaboration with the development team, subject matter 
 <section class="pcontent">
       <div class="textblock">
         <p class="bodycopy">
-          Suppliers predominantly utilize this page to initiate a linking process with their buyer within the C2FO Ecosystem. Notably, while 20% of linkings occur automatically, a substantial 80% necessitate suppliers to visit this page to request linkage, a vital step for leveraging the early invoice payment application. This process isn't a one-time occurrence; suppliers must repeat it each time they seek linkage to another buyer within our ecosystem. Therefore, it constitutes an ongoing experience, the culmination of which directly translates into tangible revenue for the company.<br><br>
+          Suppliers predominantly utilize this page to initiate a linking process with their buyer within the C2FO Ecosystem. Notably, while 20% of linkages occur automatically, a substantial 80% necessitate suppliers to visit this page to request linkage, a vital step for leveraging the early invoice payment application. This process isn't a one-time occurrence; suppliers must repeat it each time they seek linkage to another buyer within our ecosystem. Therefore, it constitutes an ongoing experience, the culmination of which directly translates into tangible revenue for the company.<br><br>
 
 Furthermore, this iterative linking process contributes to improved customer experiences for suppliers and enhances user retention. The revenue implications are significant, as the transition from a single-buyer-supplier to a multi-buyer-supplier results in a fourfold increase, according to company data. This singular metric underscores the importance of investing in and optimizing this experience, emphasizing its critical role in driving revenue growth and ensuring a positive and lasting impact on both customer satisfaction and user retention.
         </p>
@@ -293,14 +315,7 @@ Furthermore, this iterative linking process contributes to improved customer exp
       </div>
 
     </section>
-      <section class="contentfull">
-        <div class="userflows">
 
-          <div class="laptop1"><img src="images/addbuyer/laptop1.png" alt="laptop1">
-          </div>
-
-        </div>
-      </section>
 
 <section class="pcontent">
         <div class="textblock">
@@ -312,6 +327,15 @@ Furthermore, this iterative linking process contributes to improved customer exp
         </div>
 
 
+</section>
+<section class="contentfull">
+  <div class="userflows">
+
+    <div class="oldscreen"><img src="images/addbuyer/frontendcap.png" alt="laptop1">
+    </div>
+
+
+  </div>
 </section>
 
       <!--  <section class="pcontent">
@@ -329,7 +353,7 @@ Furthermore, this iterative linking process contributes to improved customer exp
           </div>
           <div class="textblock">
           <p class="bodycopy">
-        The existing back-end work flow was inefficient. Due to lack of contextual feedback, an user once submitted a duplicate request 287 times! This pattern led to severe alert fatigue for the support team members. There was human intervention needed for every step of the process. It was no surprise that a completion rate survey done with the team members revealed 30% touch-rate for these tickets and a mere 10% completion rate for this crucial step in the onboarding process!
+        The existing back-end workflow was inefficient. Due to lack of contextual feedback, a user once submitted a duplicate request 287 times! This pattern led to severe alert fatigue for the support team members. There was human intervention needed for every step of the process. It was no surprise that a completion rate survey done with the team members revealed 30% touch-rate for these tickets and a mere 10% completion rate for this crucial step in the onboarding process!
       </p>
         </div>
       </section>
@@ -360,12 +384,12 @@ Furthermore, this iterative linking process contributes to improved customer exp
 <p class="captions fig pf2"><a href="https://www.janushenderson.com/en-us/investor/" target="_blank">Janus Henderson</a> client branded high-fidelity mock-ups</p><br><br>-->
 
 <section class="title">
-      THE PROPOSAL
+      THE DESIGN SOLUTION
 </section>
 
         <section class="pcontent">
             <div class="smalltitle">
-              <p class="subtitle">FRONT-END: LOW-FIDELITY MOCKUPS</p>
+              <p class="subtitle left">LOW-FIDELITY MOCKUPS</p>
             </div>
             <div class="textblock">
               <p class="bodycopy">The low-fidelity mockups successfully addressed some of the fundamental UI elements currently lacking in the system. These improvements encompassed the introduction of a search bar and contextual feedback when initiating a request. To mitigate the occurrence of duplicate requests, we implemented a feature displaying the history of all requests within the existing customer dashboard.<br><Br>
@@ -390,40 +414,24 @@ For later phases of the project, we proposed more sophisticated solutions. These
           <section class="colorbk">
             <div class="content-img">
               <div class="i1 captions"><img class="handimg" src="images/addbuyer/link.png" alt="store">
-              <br> <b>Automatic Linking</b> for existing in-network buyers/suppliers when new ones get onboarded could reduce manual linking requests and increase overall process efficiency.
-</div>
+              <br> <b>Automatic Linking</b> of existing in-network buyers/suppliers when new ones get onboarded could reduce manual linking requests and increase overall process efficiency.
+        </div>
               <div class="i2 captions"><img src="images/addbuyer/upvote.png" alt="plus">
               <br> <b>Upvotes for out-of-network buyers</b> introduces a social, community aspect that is lacking on the platform today. This also reduces friction by making it fast and easy to request (one-click), resulting in more votes/frequency of requests.
-</div>
-              <div class="i3 captions"><img src="images/addbuyer/puzzle.png" alt="comp"><br> <b>Smart Suggestions</b> of possible buyers from historical patterns of suppliers in the same markets will introduce intelligence into the system and increase linkages within network.
-</div>
+        </div>
+              <div class="i3 captions"><img src="images/addbuyer/puzzle.png" alt="comp"><br> <b>Smart Suggestions</b> of possible buyers from historical patterns of suppliers in the same markets will introduce intelligence into the system and increase linkages within the network.
+        </div>
             </div>
           </section>
 
 
-          <section class="pcontent">
-            <div class="smalltitle">
-              <p class="subtitle">BACK-END: IMPROVED PROCESS FLOW</p>
-            </div>
-            <div class="textblock">
-              <p class="bodycopy">
-In collaboration with the support team lead, we worked to create a solution that automates checks in the support team's ticket handling flow. For example, if specific information was missing, the system would automatically send an email to the user requesting that information, eliminating the need for human intervention in the process flow. Through iterative refinement, we were able to propose a more efficient process workflow that enhances the support team's efficiency by 3x. This translates to reducing the need for human intervention from 5 team members to 2 for every ticket submitted, relative to its current state.
-              <br>
-              </p>
-          </section>
 
-          <section class="contentfull">
-            <div class="preftest">
-              <div class="flowprocess"><img src="images/addbuyer/afterworkflow.png" alt="User flow for the onboarding process by New User">
-              <p class="captions fig"> Proposal for a 3x more efficient ticket handling workflow as part of the back-end service design.</p>
-              </div>
 
-              <div class="preftest">
-                <div class="flowprocess"><img src="images/addbuyer/new-ncr.png" alt="User flow for the onboarding process by New User">
-                <p class="captions fig"> Detailed diagram showing the relationship of the data flow between front-end UI, back-end data tables and the new Salesforce dashboard.</p>
-                </div>
-              </div>
-              </section>
+
+
+
+
+
 
 
               <section class="pcontent">
@@ -493,6 +501,197 @@ In collaboration with the support team lead, we worked to create a solution that
 
               </section>
 
+
+              <section class="pcontent">
+                  <div class="smalltitle">
+                    <p class="subtitle left">ELEMENTS OF THE DESIGN</p>
+                  </div>
+              </section>
+
+            <section class="feature">
+
+
+
+
+            <section class="pcontent">
+              <div class="textblock nogap">
+
+
+              <p class="bodycopy big">Being a catalog page, the main CTA on the revamped UI is centered and bold in the green banner: the search bar.<br><br></p>
+
+              <p class="bodycopy"> Suppliers (users) are coming to this page to get linked to the buyers they do business with. To do this, the first and foremost step is to find their buyer.
+              </p>
+              </div>
+            </section>
+
+            <section class="contentfull">
+              <div class="preftest">
+              <div class="element"><img src="images/addbuyer/final/final/1.png" alt="User flow for the onboarding process by New User">
+              </div>
+
+              </div>
+            </section>
+
+
+            </section>
+
+
+            <section class="feature">
+
+
+
+
+            <section class="pcontent">
+              <div class="textblock nogap">
+
+
+              <p class="bodycopy big">A snapshot of the active request tickets (with their real-time status indicators) as well as their linked buyers ensures that redundant requests were less likely and increased user trust in the platform.<br><br></p>
+
+              <p class="bodycopy">On the back-end, checks were coded into the logic to check if the connection between the supplier and buyer already exists if they attempted to submit a redundant request.
+              </p>
+              </div>
+            </section>
+
+            <section class="contentfull">
+              <div class="gifborder">
+              <div class="element gif"><img src="images/addbuyer/final/final/2snapshot.gif" alt="User flow for the onboarding process by New User">
+              </div>
+
+              </div>
+            </section>
+
+
+            </section>
+
+  <section class="feature">
+
+            <section class="pcontent">
+              <div class="textblock nogap">
+
+
+                <p class="bodycopy big">The main user flow in the experience was the simple form that a supplier had to fill to log a “linking request”. This form filling experience was reworked to include all the necessary information for the back-end support team to efficiently and quickly complete the linking request. A confirmation of the submission ensured the user that their request was heard and we are working on it - a huge improvement in gaining user trust with the platform!
+<br><br></p>
+
+                <p class="bodycopy">The existing experience lacked any contextual feedback, several mandatory fields were missing and confirmation of request was non-existent. So the user was essentially submitting an incomplete request which was set up for failure from the get go .
+                </p>
+              </div>
+            </section>
+
+            <section class="contentfull">
+              <div class="preftest">
+              <div class="contentfull preftest flowprocess"><img src="images/addbuyer/final/final/3process.png" alt="User flow for the onboarding process by New User">
+              </div>
+
+              </div>
+            </section>
+
+
+  </section>
+
+  <section class="feature">
+
+            <section class="pcontent">
+              <div class="textblock nogap">
+
+
+                <p class="bodycopy big">The impact of a successful linking between a supplier and buyer can be realized by the fact that a single-buyer supplier who gets connected to just one additional buyer (referred to as “multi-buyer supplier”) increases the company revenue by 4x. This is a celebration indeed! Every successful linking request is indicated at the next log in of the user with this confetti splash.
+<br><br></p>
+
+                <p class="bodycopy">User delight is an underrated add-on in most enterprise SaaS products. But as user experience designers we need to be cognizant of the fact that at the end of the day, all users are human and the element of delight will only increase user engagement and retention by forming an emotional bond in the most subtle ways.
+                </p>
+              </div>
+            </section>
+
+            <section class="contentfull">
+              <div class="gifborder">
+              <div class="flowprocess celebrate"><img src="images/addbuyer/final/final/4celebrate.gif" alt="User flow for the onboarding process by New User">
+              </div>
+
+              </div>
+            </section>
+
+
+  </section>
+
+            <section class="feature">
+
+
+
+
+            <section class="pcontent">
+              <div class="textblock nogap">
+
+
+              <p class="bodycopy big">When a supplier doesn’t find the buyer they are looking for in the catalog, the experience funnels them to the “New Customer Request” form. This ensures that the user understands that they are requesting an out-of-network buyer. This also makes the user feel heard, increases transparency in the platform and builds user trust. <br><br></p>
+
+              </div>
+            </section>
+
+            <section class="contentfull">
+              <div class="gifborder">
+              <div class="element gif"><img src="images/addbuyer/final/final/4direction.PNG" alt="User flow for the onboarding process by New User">
+              </div>
+
+              </div>
+            </section>
+
+
+            </section>
+
+            <section class="feature">
+
+
+
+
+            <section class="pcontent">
+              <div class="textblock nogap">
+
+
+              <p class="bodycopy big">The experience uplift introduced a brand new page for out-of-network buyer requests. This ensured that the suppliers were able to clearly understand which companies were already in network and who they needed to request.<br><br></p>
+
+              <p class="bodycopy">I also introduced a completely new concept of “Trending Customer Request” which brought the aspect of “community” to the platform for the first time. The suppliers could “upvote” other buyers who were most requested by other suppliers like themselves.
+              </p>
+              </div>
+            </section>
+
+            <section class="contentfull">
+              <div class="gifborder">
+              <div class="element gif"><img src="images/addbuyer/final/final/5outofnetwork.png" alt="User flow for the onboarding process by New User">
+              </div>
+
+              </div>
+            </section>
+
+
+            </section>
+
+            <section class="feature">
+
+
+
+
+            <section class="pcontent">
+              <div class="textblock nogap">
+
+
+              <p class="bodycopy big">The user can request out-out-network buyers in two ways. The main call-to-action on this page was a “Request New Customer” button which would open a traditional form that collects all the relevant and clean data needed from the user to ensure we understand their request. The second option was to “Upvote” trending customer requests. These requests were essentially the most popular buyers requested by other registered suppliers on the platform.
+<br><br></p>
+
+              <p class="bodycopy">This upvote feature encourages the supplier to request for more buyers quickly without filling out the form. This fosters a community element to the platform, which was completely absent before this. This in turn lets C2FO know which buyers to prioritize and pursue first.
+              </p>
+              </div>
+            </section>
+
+            <section class="contentfull">
+              <div class="pftest">
+              <div class="element vertical"><img src="images/addbuyer/final/final/6paths_vertical.png" alt="User flow for the onboarding process by New User">
+              </div>
+
+              </div>
+            </section>
+
+
+            </section>
 
 
           <section class="pcontent">
@@ -633,17 +832,41 @@ function showSlides(n) {
               </div>
             </section>
 
+            <section class="pcontent">
+              <div class="smalltitle">
+                <p class="subtitle">BACK-END: IMPROVED PROCESS FLOW</p>
+              </div>
+              <div class="textblock">
+                <p class="bodycopy">
+            In collaboration with the support team lead, we worked to create a solution that automates checks in the support team's ticket handling flow. For example, if specific information was missing, the system would automatically send an email to the user requesting that information, eliminating the need for human intervention in the process flow. Through iterative refinement, we were able to propose a more efficient process workflow that enhances the support team's efficiency by 3x. This translates to reducing the need for human intervention from 5 team members to 2 for every ticket submitted, relative to its current state.
+                <br>
+                </p>
+            </section>
+
+            <section class="contentfull">
+              <div class="preftest">
+                <div class="flowprocess"><img src="images/addbuyer/afterworkflow.png" alt="User flow for the onboarding process by New User">
+                <p class="captions fig"> Proposal for a 3x more efficient ticket handling workflow as part of the back-end service design.</p>
+                </div>
+
+                <div class="preftest">
+                  <div class="flowprocess"><img src="images/addbuyer/new-ncr.png" alt="User flow for the onboarding process by New User">
+                  <p class="captions fig"> Detailed diagram showing the relationship of the data flow between front-end UI, back-end data tables and the new Salesforce dashboard.</p>
+                  </div>
+                </div>
+                </section>
+
 
             <section class="title">
                   CONCLUSION
             </section>
 
             <section class="pcontent">
-              <p>
-            What initially seemed like an insurmountable challenge has turned into one of the most fulfilling experiences in my design career. Here's a non-exhaustive list of lessons learned from this project:<br></p>
+              <p class="bodycopy">
+            What initially seemed like an insurmountable challenge has turned into one of the most fulfilling experiences in my design career. Here's a non-exhaustive list of lessons learned from this project:<br><br></p>
 
 
-            <ul class="ul-content">
+            <ul class="ul-content bodycopy">
               <li>Taking ownership of a product </li>
               <li>Pitching to leadership and succeeding in getting the initiative on the product delivery roadmap</li>
               <li>Calculating projected metrics for a business case</li>
@@ -655,7 +878,7 @@ function showSlides(n) {
 
 <br><br>
 
-<p>
+<p class="bodycopy">
 As of October 24, 2023, this initiative is in alpha testing, and usability sessions are ongoing. Feedback from these sessions is planned to be incorporated into Phase 2 of the project, scheduled for Q1 2024.<br><br>
 
 In the initial stages of this initiative, carving out time outside my standard design duties in a newly joined company felt like searching for a needle in a haystack. However, once I found my stride and had the support team lead backing the effort due to her team experiencing the pain of the poor experience on the back end, internal users started sharing their frustrations. The business case organically took shape. There can't be enough said about having stakeholders across the organization support an effort that improves the company, helps them perform their jobs better, and upgrades the experience for end-users—all in one go!
