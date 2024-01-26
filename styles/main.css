@@ -1097,10 +1097,10 @@ div.pf1, div.pf2 {
   justify-content: center;
   align-items: flex-end;
   align-content: center;
-  max-height:auto;
+
   margin-left:auto;
   margin-right: auto;
-  height:80vh;
+  max-height:80vh;
   max-width:80vw;
 
 }
@@ -1529,7 +1529,25 @@ div.conc1, div.conc2{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
+  align-content: center;
   padding: 50px 20px;
+  width:100%;
+}
+
+.wrapper{
+  width:100%;
+  margin:0;
+}
+
+.addbuyerrow1 {
+  display: flex;
+    flex-wrap:nowrap;
+    gap: 0px;
+}
+
+.addbuyerrow1>* {
+  flex: 0 0 33.3333%;
 }
 
 .s1 img, .s2 img, .s3 img, .s4 img, .s5 img, .s6 img,
@@ -1540,10 +1558,19 @@ div.conc1, div.conc2{
   justify-content: space-between;
   align-items: center;
   align-content: center;
-  padding: 0px 10px;
+  padding: 0px 20px;
   width: auto;
 }
 
+.ab img{
+  padding:0
+}
+
+.cheers img{
+  zoom:90%;
+  height:45rem;
+  width:auto;
+}
 
 .personas{
   display: flex;
@@ -1557,6 +1584,12 @@ div.conc1, div.conc2{
   height:auto;
   width:100%;
   overflow:auto;
+}
+
+#buyerframe{
+  height:auto;
+  width:100%;
+  overflow:hidden;
 }
 
 
@@ -2239,6 +2272,13 @@ li.proj-Content{
     overflow-y: hidden;
   }
 
+  #buyerframe{
+    height:500px;
+    width:auto;
+    overflow:auto;
+    scroll-behavior: smooth;
+    overflow-y: hidden;
+  }
   /* .personas img{
     max-width: 100%;
    height: auto;
@@ -2443,10 +2483,11 @@ img {vertical-align: middle;}
 
   .prev, .next,.text {font-size: 11px}
 
-  .flowprocess{
+  .flowprocess, .element, .gif{
    width:100%;
 
  }
+
 
 .my-row{
   display: flex;
