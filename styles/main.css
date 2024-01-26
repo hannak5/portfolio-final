@@ -363,6 +363,11 @@ li.logo {
   width:100%;
   padding:0;
 }
+
+.topimg img{
+  height: 90vh;
+}
+
 .herotop, .herobottom{
       display:flex;
       flex-direction: column;
@@ -1551,6 +1556,8 @@ div.conc1, div.conc2{
 .wrapper{
   width:100%;
   margin:0;
+  padding-top:5%;
+  padding-bottom:10%;
 }
 
 .addbuyerrow1 {
