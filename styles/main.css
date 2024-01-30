@@ -358,15 +358,18 @@ li.logo {
   }
 
 .addbuyerhero img{
-  object-fit: fit;
-  height:auto;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  align-content: center;
+  max-height: auto;
+
+
   width:100%;
   padding:0;
 }
 
-.topimg img{
-  height: 90vh;
-}
+
 
 .herotop, .herobottom{
       display:flex;
@@ -1110,7 +1113,7 @@ div.pf1, div.pf2 {
 
 }
 
-.element1 img{
+.vertical img{
   display: flex;
   justify-content: center;
   align-items: flex-end;
@@ -1119,20 +1122,8 @@ div.pf1, div.pf2 {
   margin-left:auto;
   margin-right:auto;
   max-height:auto;
-  max-width:80vw;
-
-}
-
-.vertical img{
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  align-content: center;
-  max-height:auto;
-  margin-left:auto;
-  margin-right: auto;
-  height:100%;
   max-width:95vw;
+
   padding-top:5%;
 
 }
